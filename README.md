@@ -1,4 +1,4 @@
-# ZChat
+# ZChat Application
 Chat application developed on a mobile platform
 
 ## About project
