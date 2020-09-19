@@ -2,4 +2,8 @@
     <string name="app_name">ZChat</string>
     <string name="firstButton">Click me</string>
     <string name="need_a_new_acoount">NEED A NEW ACOOUNT?</string>
+    <string name="display_name">Display name</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="submit">Submit</string>
 </resources>
