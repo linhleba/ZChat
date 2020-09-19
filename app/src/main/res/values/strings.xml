@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">ZChat</string>
     <string name="firstButton">Click me</string>
+    <string name="need_a_new_acoount">NEED A NEW ACOOUNT?</string>
 </resources>
