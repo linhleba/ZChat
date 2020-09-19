@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">ZChat</string>
+    <string name="firstButton">Click me</string>
 </resources>
