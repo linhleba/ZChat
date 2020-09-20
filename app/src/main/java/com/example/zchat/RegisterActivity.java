@@ -48,7 +48,7 @@ public class RegisterActivity extends AppCompatActivity {
 
                 register_user(display_name, email, password);
             }
-        }); 
+        });
     }
 
     private void register_user(String display_name, String email, String password) {
