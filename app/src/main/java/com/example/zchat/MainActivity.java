@@ -1,6 +1,7 @@
 package com.example.zchat;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import androidx.appcompat.widget.Toolbar;
@@ -8,6 +9,7 @@ import androidx.appcompat.widget.Toolbar;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.webkit.WebView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -43,10 +45,14 @@ public class MainActivity extends AppCompatActivity {
         //updateUI(currentUser);
         if (currentUser == null)
         {
-            Intent startIntent = new Intent(MainActivity.this, StartActivity.class);
-            startActivity(startIntent);
-            finish();
+            redirectToStart();
         }
+    }
+
+    private void redirectToStart() {
+        Intent startIntent = new Intent(MainActivity.this, StartActivity.class);
+        startActivity(startIntent);
+        finish();
     }
 
     // Create main menu for logging out
@@ -55,6 +61,22 @@ public class MainActivity extends AppCompatActivity {
         super.onCreateOptionsMenu(menu);
         getMenuInflater().inflate(R.menu.main_menu, menu);
 
+        return true;
+    }
+
+    // Func logout settings
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+
+        // check if id equals to logout_btn id
+        if (item.getItemId() == R.id.main_logout_btn)
+        {
+            // checkout firebase logout - code in firebase
+            FirebaseAuth.getInstance().signOut();
+            redirectToStart();
+        }
+        super.onOptionsItemSelected(item);
         return true;
     }
 }
