@@ -36,7 +36,7 @@ public class RegisterActivity extends AppCompatActivity {
     private Toolbar mToolbar;
 
     // Create dialog when a user submit for registering
-    //private ProgressDialog mRegisterDialog;
+    private ProgressDialog mRegisterDialog;
 
     // Firebase Authentication
     private FirebaseAuth mAuth;
@@ -47,7 +47,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
         // declare progress Dialog
-        //mRegisterDialog = new ProgressDialog(this,0);
+        mRegisterDialog = new ProgressDialog(this);
 
 
         // Set toolbar with tittle
@@ -75,7 +75,7 @@ public class RegisterActivity extends AppCompatActivity {
                 String password = mPassword.getEditText().getText().toString();
 
                 // Check if field is null or not
-               /* if (TextUtils.isEmpty(display_name) || TextUtils.isEmpty(email) || TextUtils.isEmpty(password))
+                if (TextUtils.isEmpty(display_name) || TextUtils.isEmpty(email) || TextUtils.isEmpty(password))
                 {
 
                 }
@@ -91,7 +91,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
                 }
-            */
+
                 register_user(display_name, email, password);
             }
         });
@@ -107,13 +107,13 @@ public class RegisterActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            //mRegisterDialog.dismiss();
+                            mRegisterDialog.dismiss();
                             // Sign in success, update UI with the signed-in user's information
                             Intent intent = new Intent(RegisterActivity.this, MainActivity.class);
                             startActivity(intent);
                             finish();
                         } else {
-                            //mRegisterDialog.hide();
+                            mRegisterDialog.hide();
                             // If sign in fails, display a message to the user.
                             //Log.w(TAG, "createUserWithEmail:failure", task.getException());
                             Toast.makeText(RegisterActivity.this, "Create failed, please check again!",
