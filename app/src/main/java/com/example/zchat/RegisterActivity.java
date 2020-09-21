@@ -35,6 +35,7 @@ public class RegisterActivity extends AppCompatActivity {
     private Button mCreateBtn;
     private Toolbar mToolbar;
 
+
     // Create dialog when a user submit for registering
     private ProgressDialog mRegisterDialog;
 
@@ -66,6 +67,8 @@ public class RegisterActivity extends AppCompatActivity {
         mPassword = (TextInputLayout) findViewById(R.id.res_password_text);
         mCreateBtn = (Button) findViewById(R.id.res_btn);
 
+
+
         mCreateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -95,6 +98,8 @@ public class RegisterActivity extends AppCompatActivity {
                 register_user(display_name, email, password);
             }
         });
+
+
 
 
 

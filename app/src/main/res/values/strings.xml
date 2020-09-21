@@ -3,8 +3,13 @@
     <string name="firstButton">Click me</string>
     <string name="need_a_new_acoount">NEED A NEW ACOOUNT?</string>
     <string name="display_name">Display name</string>
-    <string name="email_address">Email address</string>
-    <string name="password">Password</string>
     <string name="submit">Submit</string>
     <string name="log_out">Log Out</string>
+    <string name="log_in">LOG IN</string>
+    <string name="welcome_to_zchat">Welcome to ZChat</string>
+    <string name="sign_in">Sign in</string>
+    <string name="hint">hint</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email address</string>
+    <string name="login_account">Login account</string>
 </resources>
