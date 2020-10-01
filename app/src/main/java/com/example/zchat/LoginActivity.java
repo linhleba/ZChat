@@ -87,9 +87,10 @@ public class LoginActivity extends AppCompatActivity {
                             /* Log.d(TAG, "signInWithEmail:success");
                             FirebaseUser user = mAuth.getCurrentUser();
                             updateUI(user); */
-
                             // If login successful, redirect to main activity
                             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                            // fix issue when return activity, it won't return start page
+                            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                             startActivity(intent);
                             finish();
                         } else {
