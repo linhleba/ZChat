@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "240710937878",
+    "firebase_url": "https://zchat-31589.firebaseio.com",
+    "project_id": "zchat-31589",
+    "storage_bucket": "zchat-31589.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:240710937878:android:d945b1e68f169898ef3437",
+        "android_client_info": {
+          "package_name": "com.example.zchat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "240710937878-528vue66o2jajd6gf95735f0i7qch3lj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.zchat",
+            "certificate_hash": "f8c0db9834640ae9faf8ea14230dda1c1c14123b"
+          }
+        },
+        {
+          "client_id": "240710937878-h9p81kgdnap42titnbe8tm4l760oa90u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFvl94imWqurn5t09hfpIGoiDVbTI2y-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "240710937878-h9p81kgdnap42titnbe8tm4l760oa90u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
